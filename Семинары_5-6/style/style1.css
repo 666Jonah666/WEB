@@ -7,19 +7,19 @@
   color: white;
   font-family: Oswald;
   font-size: 15px;
-  text-indent: -100%;
-  margin-bottom: 10px;
+  text-indent: -70%;
+  margin: 5px 5px 20px;
 
 }
 .carousel-indicators .active{
 
   font-size: 30px;
-    text-indent: -100%;
+    text-indent: -95%;
     margin-top: -15px;
     text-align: center;
     border-bottom: 2px solid green;
     line-height: 0.05em;
-    margin: 5px 5px 20px;
+    margin: 10px 5px 20px;
     }
 .navbar{
   font-family: Oswald;
