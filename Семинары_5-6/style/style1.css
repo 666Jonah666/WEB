@@ -126,3 +126,104 @@
     top: 50%;
     width: 22%;
 }
+.blog-card1 {
+  max-width: 370px;
+  width:100%;
+  height: 395px;
+  position: absolute;
+  color:black;
+  top: 20%;
+  right: 0;
+  left: 0;
+  margin: 300% 9%;
+  overflow: hidden;
+  border-radius: 0px;
+  text-align: center;
+  transition:all 0.4s;
+  background: url(../images/man1.png) center no-repeat;
+
+}
+.blog-card2 {
+  max-width: 370px;
+  width:100%;
+  height: 395px;
+  position: absolute;
+  color:black;
+  top: 20%;
+  right: 0;
+  left: 0;
+  margin: 300% 39%;
+  overflow: hidden;
+  border-radius: 0px;
+  text-align: center;
+  transition:all 0.4s;
+  background: url(../images/man2.png) center no-repeat;
+
+}
+.blog-card3 {
+  max-width: 370px;
+  width:100%;
+  height: 395px;
+  position: absolute;
+  color:black;
+  top: 20%;
+  right: 0;
+  left: 0;
+  margin: 300% 69%;
+  overflow: hidden;
+  border-radius: 0px;
+  text-align: center;
+  transition:all 0.4s;
+  background: url(../images/man3.png) center no-repeat;
+
+}
+ .title-content{
+   background-color: rgba(255, 255, 255, 0.6);
+ }
+.blog-card1:hover .title-content{
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top:63.3%;
+
+}
+.blog-card2:hover .title-content{
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top:63.3%;
+
+}
+.blog-card3:hover .title-content{
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top:63.3%;
+
+}
+.title-content {
+  text-align: center;
+  margin: 95% 0 0 0;
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition:all 0.8s
+}
+.h3-1:after {
+  content: " ";
+  display: block;
+  width: 0%;
+  height: 1px;
+  margin: 20px auto;
+  border: 0;
+}
+.card-info {
+   box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 50px;
+
+  z-index: 20;
+  opacity: 0;
+  transition: bottom 0.8s, opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
