@@ -135,7 +135,7 @@
   top: 20%;
   right: 0;
   left: 0;
-  margin: 300% 9%;
+  margin: 295% 9%;
   overflow: hidden;
   border-radius: 0px;
   text-align: center;
@@ -152,7 +152,7 @@
   top: 20%;
   right: 0;
   left: 0;
-  margin: 300% 39%;
+  margin: 295% 39%;
   overflow: hidden;
   border-radius: 0px;
   text-align: center;
@@ -169,7 +169,7 @@
   top: 20%;
   right: 0;
   left: 0;
-  margin: 300% 69%;
+  margin: 295% 69%;
   overflow: hidden;
   border-radius: 0px;
   text-align: center;
@@ -226,4 +226,34 @@
   z-index: 20;
   opacity: 0;
   transition: bottom 0.8s, opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+.carousel-control-prev-icon.carousel-control-prev-icon-s {
+  margin-left: -80%;
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23808080' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon.carousel-control-next-icon-s {
+margin-left: 80%;
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23808080' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.carousel.carousel-s .carousel-item.carousel-item-s {
+height: 300px;
+}
+
+.carousel-item-s img {
+  position: absolute;
+  object-fit:cover;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}
+.carousel-control-next-icon-s,
+.carousel-control-prev-icon-s {
+margin-top: 130%;
+width: 2vw;
+height: 3vw;
+}
+img.center {
+    display: block;
+    margin: 0 auto;
 }
