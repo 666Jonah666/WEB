@@ -1,0 +1,19 @@
+.link-primary:hover {
+  text-decoration: underline;
+}
+.link-primary{
+  text-decoration: none;
+}
+.link-primary.link-primary-s{
+  color: 83929E;
+}
+.link-primary.link-primary-s:hover{
+  color: 0A58D3;
+}
+.btn-success{
+  background-color: 2DA54E;
+  color: white;
+}
+.btn-success:hover{
+  background-color: 2C974B;
+}
