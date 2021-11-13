@@ -17,11 +17,7 @@ for (var i = 0; i < 100; i++) {
 
 // task 3
 for (var i = 0; i < 8; i++) {
-  if (i%2 == 0) {
-    console.log("# # # #");
-  } else {
-    console.log(" # # # #");
-  }
+  i % 2 == 0 ? console.log("# # # #") : console.log(" # # # #");
 }
 //task 4
 function min(a, b) {
