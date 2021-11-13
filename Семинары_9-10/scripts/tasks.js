@@ -56,7 +56,6 @@ console.log(sum(test));
 
 function arr_2(start, stop, step = 1) {
   let arr1 = [];
-  console.log(step);
   if (Number(step) < 0) {
     for (var i = start; i >= stop; i+=step) {
       arr1.push(i);
@@ -79,8 +78,10 @@ function reverseArr(arr1) {
     return arr2;
 }
 console.log(reverseArr([1, 2, 3, 4]));
+
 function reverseArrayInPlace(arr1) {
     for(let i = 0, j = arr1.length-1; i < j; i++, j--)
         [arr1[i], arr1[j]] = [arr1[j], arr1[i]];
+    return arr1;
 }
-console.log(reverseArr([1, 2, 3, 4]));
+console.log(reverseArrayInPlace([1, 2, 3, 4]));
