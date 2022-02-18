@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="sum"> </div>
+    <div id="app"> </div>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <script type="text/babel">
+    ReactDOM.render(
+        <h2>5 + 2 = {5 + 2}</h2>,
+        document.getElementById("sum")
+    )
+    const userClassName = "user-info";
+    const styleObj = {
+        color:'green',
+        fontFamily:'Verdana'
+    };
+    const user = {
+        id : 5,
+        age: 19,
+        firstName: 'Andrey',
+        lastName: 'Nikitin',
+        getFullName: function(){
+            return `${this.firstName} ${this.lastName}`;
+        }
+    };
+    ReactDOM.render(
+        <div className={userClassName}  style={styleObj}>
+                <p>Полное имя: {user.getFullName()}</p>
+                <p>Возраст: {user.age}</p>
+        </div>,
+        document.getElementById("app")
+    )
+    </script>
+  </body>
+</html>
