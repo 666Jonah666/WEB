@@ -7,6 +7,22 @@ ReactDOM.render(
     <Hello></Hello>,
     document.getElementById("app")
 )
+class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+        My name is {this.props.name}
+      </div>
+    );
+  }
+}
+
+
+
+ReactDOM.render(
+  <HelloMessage name="Andrey" />,
+  document.getElementById('hello')
+);
 
 class TodoApp extends React.Component {
   constructor(props) {
@@ -19,11 +35,11 @@ class TodoApp extends React.Component {
   render() {
     return (
       <div>
-        <h3>TODO</h3>
+        <h3>Here's my todo list</h3>
         <TodoList items={this.state.items} />
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="new-todo">
-            What needs to be done?
+            What do you need to do? &nbsp;
           </label>
           <input
             id="new-todo"

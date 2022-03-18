@@ -7,7 +7,31 @@
   </head>
   <body>
     <div id="app"> </div>
+    <div id="email"></div>
+    <input placeholder="email@example.com"> 
+    
+    <p>Select a maintenance drone:</p>
+      <div>
+        <input type="radio" id="huey" name="drone" value="huey"
+              checked>
+        <label for="huey">Huey</label>
+      </div>
+
+      <div>
+        <input type="radio" id="dewey" name="drone" value="dewey">
+        <label for="dewey">Dewey</label>
+      </div>
+
+      <div>
+        <input type="radio" id="louie" name="drone" value="louie">
+        <label for="louie">Louie</label>
+    </div>
+
+    <div id="color"></div>
     <div id="btn"> </div>
+    <div id="date"></div>
+    <div id="time"></div>
+
 
 
     
@@ -24,10 +48,18 @@
               <Hello name="Андрей" age="19" />,
               document.getElementById("app")
           )
+      ReactDOM.render(
+        <p>Enter your email address:</p>,
+          document.getElementById("email")
+      )
+      ReactDOM.render(
+        <h3>Change button color</h3>,
+          document.getElementById("color")
+      )
       class ClickButton extends React.Component {
           constructor(props) {
             super(props);
-            this.state = {class: "off", label: "Нажми"};
+            this.state = {class: "off", label: "Press"};
             this.press = this.press.bind(this);
           }
           press(){
@@ -38,12 +70,27 @@
           render() {
             return <button onClick={this.press} className={this.state.class}>{this.state.label}</button>;
           }
-      }
+        }
+        ReactDOM.render(
+            <ClickButton />,
+            document.getElementById("btn")
+        )
+     
+
+      const currDate = new Date().toLocaleDateString();
+      const currTime = new Date().toLocaleTimeString();
       ReactDOM.render(
-          <ClickButton />,
-          document.getElementById("btn")
+        <p> Сегодня {currDate} </p>,
+                document.getElementById("date")
+            )
+      ReactDOM.render(
+        <p> Сейчас {currTime} </p>,
+          document.getElementById("time")
       )
-    </script>
+
+      </script>
+      
+      
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
